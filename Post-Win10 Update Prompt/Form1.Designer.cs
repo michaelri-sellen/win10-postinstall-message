@@ -52,9 +52,9 @@ namespace Post_Win10_Update_Prompt
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(376, 156);
             this.label1.TabIndex = 1;
-            this.label1.Text = "A reboot is required to complete the upgrade. This reboot process may take 1 to 2" +
-    " hours to complete. Please reboot at your earliest convenience. \r\n\r\nThank you!\r\n" +
-    "\r\n";
+            this.label1.Text = "A restart is required. This restart process may take 30 - 90 minutes. Please rest" +
+    "art within the next 8 hours or one will be done automatically.\r\n\r\nThank you!\r\n\r\n" +
+    "";
             // 
             // OKBtn
             // 
@@ -75,9 +75,14 @@ namespace Post_Win10_Update_Prompt
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainPrompt";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Post-Update-Prompt";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
